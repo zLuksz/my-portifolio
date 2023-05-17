@@ -287,7 +287,10 @@ main .sobre {
         grid-column: 1/-1;
     }
     .sobre_info {
-        grid-column: 1/-1;
+        display: block;
+    }
+    .sobre_info p {
+        margin: 1rem;
     }
 }
 
@@ -381,4 +384,20 @@ main .sobre {
     height: 100%;
     border-bottom: 2px solid #dc3545;
     border-left: 2px solid #dc3545;
+}
+
+@media(max-width: 992px) { 
+    .my_services {
+        padding: 0px;
+        color: #f7f7f7;
+    }
+    
+    .my_services ul {
+        gap: 20px;
+    }
+    
+    .my_services ul li {
+        padding: 0px;
+        gap: 10px; 
+    }
 }
