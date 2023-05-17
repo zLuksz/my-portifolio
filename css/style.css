@@ -267,7 +267,7 @@ main .sobre {
     .section-div {
         background-image: url(/img/fotoPerfil.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
     header .navegacao-primaria {
         display: none;
@@ -281,6 +281,12 @@ main .sobre {
         justify-self: center;
     }
     .sobre_conteudo {
+        grid-column: 1/-1;
+    }
+    .sobre_texto p {
+        grid-column: 1/-1;
+    }
+    .sobre_info {
         grid-column: 1/-1;
     }
 }
