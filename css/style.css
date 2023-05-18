@@ -283,7 +283,7 @@ main .sobre {
         display: none;
     }
     .section-div {
-        background-image: url(/img/newPerfil.png);
+        background-image: url(../img/newPerfil.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -541,7 +541,7 @@ main .sobre {
 }
 
 .education_content ul {
-    color: #ff4d56;
+    color: #dc3545;
     gap: 10px;
     display: flex;
     cursor: pointer;
@@ -608,9 +608,10 @@ main .sobre {
     display: grid;
 }
 
-.my_skill h2 {
+.my_skill h2{
     padding: 10px 30px;
     border-radius: 3px;
+    text-transform: uppercase;
     background-color: #dc3545;
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
@@ -648,13 +649,14 @@ main .sobre {
     grid-template-columns: 1fr 1fr;
 }
 
-.funfacts h2 {
+.funfacts h2{
     grid-column: 1/-1;
     padding: 10px 30px;
     border-radius: 3px;
+    text-transform: uppercase;
+    background-color: #dc3545;
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
-    background-color: #dc3545;
     margin-bottom: 30px;
     justify-self: start;
 }
@@ -669,14 +671,14 @@ main .sobre {
     gap: 30px;
 }
 
-.funfacts ul li {
+.funfacts ul li{
     background-color: #222;
     border: 3px solid #2f2b2b;
-    display: grid;
     grid-template-columns: auto 1fr;
     align-self: start;
     width: 200px;
     height: 100px;
+    display: grid;
 }
 
 .funfacts ul li i {
@@ -702,4 +704,23 @@ main .sobre {
     color: #707070;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+}
+
+@media(max-width: 992px) {
+    .cursos {
+        display: block;
+    }
+    .funfacts {
+        display: block;
+        margin-top: 30px;
+    }
+    .my_skill {
+        display: block;
+    }
+    .funfacts ul {
+        display: block;
+    }
+    .funfacts ul li {
+        margin: 10px;
+    }
 }
